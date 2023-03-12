@@ -57,7 +57,7 @@
     font-size: large;
 }
 
-.Btn {
+.Login {
     position: absolute;
     right: 70px;
     background-color: white;
@@ -94,7 +94,7 @@
     margin: auto;
     display: grid;
     height: 100px;
-    width: 600px;
+    width: 720px;
     grid-template-rows: 1 1;
 }
 
@@ -108,7 +108,7 @@
 .Parameters_wrapper {
     all: unset;
     display: grid;
-    grid-template-columns: 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px 100px;
     background-color: none;
     height: 100%;
     margin-left: 10px;
@@ -117,10 +117,28 @@
 
 .Type,
 .City,
-.Btn2 {
+.Btn2,
+.FindContainer{
     height: 100%;
     border: none;
     background: none;
+}
+
+.FindContainer {
+    width: 100%;
+}
+
+.Find {
+    all: unset;
+    position: relative;
+    height: 30px;
+    width: 100%;
+    font-size: small;
+    font-weight: bold;
+    margin-top: 17%;
+    color: white;
+    background-color: #BE2A1E;
+    border-radius: 20px;
 }
 
 .Buy2 {

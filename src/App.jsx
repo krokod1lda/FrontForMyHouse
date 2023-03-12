@@ -5,10 +5,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p className="MyHouse">Мой дом</p>
+        <p className="MyHouse">Мой Дом</p>
         <a className="Buy">Купить</a>
         <a className="Ask">Задать вопрос</a>
-        <button className="Btn">Войти</button>
+        <button className="Login">Войти</button>
       </header>
       <body className="App-body">
         <div className="Block1">
@@ -30,6 +30,9 @@ function App() {
                   <option value="3">Студия</option>
                 </select>
                 <button className="Btn2">Бюджет</button>
+                <div className="FindContainer">
+                  <button className="Find">Поиск</button>
+                </div>
               </div>
             </div>
           </div>
