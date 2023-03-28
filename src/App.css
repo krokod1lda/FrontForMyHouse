@@ -71,23 +71,33 @@
 
 .App-body {
     background-color: #eeeeee;
+    min-height: 650px;
+    display: grid;
+}
+
+.SearchSectionWrapper {
+    margin: auto;
     width: 100%;
-    min-height: 800px;
-    display: flex;
-    align-items: baseline;
+    max-width: 900px;
+    display: grid;
 }
 
 .Block1 {
+    width: 100%;
+}
+
+.Section1 {
     position: relative;
-    width: 900px;
-    min-height: 170px;
+    width: 800px;
+    min-height: 160px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 170px;
+    margin-top: 150px;
     background-color: white;
     border-radius: 8px;
     justify-content: center;
     display: flex;
+    box-shadow: -4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
 
 .Block2 {
@@ -108,20 +118,11 @@
 .Parameters_wrapper {
     all: unset;
     display: grid;
-    grid-template-columns: 200px 200px 200px 100px;
+    grid-template-columns: 2fr 2fr 2fr 1fr;
     background-color: none;
     height: 100%;
     margin-left: 10px;
     margin-right: 10px;
-}
-
-.Type,
-.City,
-.Btn2,
-.FindContainer{
-    height: 100%;
-    border: none;
-    background: none;
 }
 
 .FindContainer {
@@ -148,4 +149,11 @@
     justify-content: left;
     font-weight: bold;
     color: #be2c1f;
+}
+
+.Parameters_wrapper > * {
+    height: 100%;
+    outline-width: 0px;
+    border: none;
+    background: none;
 }
