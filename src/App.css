@@ -151,7 +151,7 @@
     color: #be2c1f;
 }
 
-.Parameters_wrapper > * {
+.Parameters_wrapper>* {
     height: 100%;
     outline-width: 0px;
     border: none;

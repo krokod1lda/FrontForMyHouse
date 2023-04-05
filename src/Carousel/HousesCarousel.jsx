@@ -32,7 +32,7 @@ export const HousesCarousel = ({children}) => {
 
     return (
         <div className='HousesCarousel'>
-            <button class='CarouselButton LeftButton' onClick={handleLeftArrowClick}>
+            <button className='CarouselButton LeftButton' onClick={handleLeftArrowClick}>
                 <img className="Arrow LeftArrow" src={arrow}/>
             </button>
             <div className='HousesWindow'>
@@ -46,7 +46,7 @@ export const HousesCarousel = ({children}) => {
                   })}
                 </div>
             </div>
-            <button class='CarouselButton RightButton' onClick={handleRightArrowClick}>
+            <button className='CarouselButton RightButton' onClick={handleRightArrowClick}>
                 <img className="Arrow RightArrow" src={arrow}/>
             </button>
         </div>
