@@ -1,16 +1,23 @@
 import React from 'react';
 import './App.css';
 import { HousesCarousel } from './Carousel/HousesCarousel';
-import LogIn from '../src/LogIn.jsx'
+import LogIn from './LogInOrAutorization/LogIn.jsx'
+import SignIn from './SignIn/SignIn.jsx'
 import { Link, BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
 function Home() {
   return <Link to="/" className="MyHouse">Мой Дом</Link>
 }
+
 function Buying() {
   return <Link to="/buying" className="Buy">Купить</Link>
 }
+
+function AskQuestion() {
+  return <Link to="/ask" className="Ask">Задать вопрос</Link>
+}
+
 function ForLogin() {
   return <button className="Login">
     <Link to="/login">Войти</Link>
@@ -55,22 +62,28 @@ const Body = () => {
   );
 }
 
+
 function App() {
   return (
     <div>
       <div className="App">
-      <Router className="App-header">
-        <Home></Home>
-        <Buying></Buying>
-        <a className="Ask">Задать вопрос</a>
-        <ForLogin></ForLogin>
+      <Router>
+        <div className="App-header">
+          <Home></Home>
+          <Buying></Buying>
+          <AskQuestion></AskQuestion>
+          <ForLogin></ForLogin>
+        </div>
         <Routes>
           <Route path="/" exact element= {<Body />}>
           </Route>
           <Route path="/login" exact element = {<LogIn />}>
           </Route>
           <Route path="/buying" exact>
-            BUYING
+          </Route>
+          <Route path="/ask" exact>
+          </Route>
+          <Route path="/login/signIn" exact element= {<SignIn />}>
           </Route>
         </Routes>
       </Router>

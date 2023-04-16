@@ -1,0 +1,75 @@
+.LogInBlock1 {
+    margin: auto;
+    width: 500px;
+    height: 770px;
+    display: grid;
+}
+
+.LogInBlock2 {
+    width: 100%;
+    height: 100%;
+}
+
+.LogInBlock3 {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    margin-top: 40%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 1px 1px 8px 0px rgba(34, 60, 80, 0.2);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.LogInSection1 {
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+    width: 200px;
+}
+
+.IconHouse {
+    margin-top: 20%;
+    width: 60%;
+    align-self: center;
+    justify-self: center;
+}
+
+.LogInText {
+    color: #BE2A1E;
+    font-weight: bolder;
+    font-size: 30px;
+    justify-self: center;
+}
+
+.LogInSection2 {
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100%;
+    width: 100%;
+}
+
+.LogInBut {
+    all: unset;
+    display: table;
+    background-color: #eeeeee;
+    color: #be2c1f;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 3px 3px 0 rgba(0, 0, 0, 0.2);
+    height: 70%;
+    width: 130%;
+    justify-self: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.TextInBut {
+    display: table-cell;
+    vertical-align: middle;
+}

@@ -38,28 +38,34 @@
 }
 
 .MyHouse {
+    all: unset;
     position: absolute;
-    left: 55px;
+    left: 5%;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .Buy {
+    all: unset;
     position: absolute;
-    right: 380px;
+    right: 28%;
     font-weight: bold;
     font-size: large;
+    cursor: pointer;
 }
 
 .Ask {
+    all: unset;
     position: absolute;
-    right: 210px;
+    right: 16%;
     font-weight: bold;
     font-size: large;
+    cursor: pointer;
 }
 
 .Login {
     position: absolute;
-    right: 70px;
+    right: 5%;
     background-color: white;
     color: #be2c1f;
     font-weight: bold;
@@ -151,7 +157,7 @@
     color: #be2c1f;
 }
 
-.Parameters_wrapper>* {
+.Parameters_wrapper {
     height: 100%;
     outline-width: 0px;
     border: none;
